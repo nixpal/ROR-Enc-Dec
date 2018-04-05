@@ -30,9 +30,9 @@ decode:
 	mov al, bl            ; Get the same byte from ebx to eax this time.
 	test al, al           ; We test now the last bit if it's "1" or not "check the encoder file for more details"
 	js is_signed          ; If it's signed, then it means it has "1", then jump to is_signed
-	shl al, 1             ; if it's not signed then the last bit is zero.
+	shl al, 1             ; if it's not signed then the last bit is zero. We shift it left now.
 	xor al, 0xa3          ; Now we xor it with 0xa3
-	mov [esi], al         ; move the final output back to esi
+	mov [esi], al         ; move the final byte back to esi
 	inc esi               ; increment esi to move to the next byte
 	
 	jmp short decode
