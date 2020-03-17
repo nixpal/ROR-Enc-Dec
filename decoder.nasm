@@ -4,7 +4,7 @@
 
 
 
-;Note I added "\x99" as a marker of the end of the shellcode at the end.
+;Note I added "\x99" as a marker of the end of the shellcode.
 ;Make sure the marker doesn't exist in your shellcode already before adding it.
 
 global _start
