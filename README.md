@@ -1,7 +1,7 @@
-# XOR-SHR-Enocder-Decoder
-Shift Right + XOR Encoder
+# XOR-ROR-Enocder-Decoder
+Rotate Right + XOR Encoder
 
-The purpose if this Encoder is to encode a shellcode using XOR and shift right operations.
+The purpose if this Encoder is to encode a shellcode using XOR and rotate right operations.
 Use the Encoder.py first and then Decoder.nasm
 
 # Getting started:
